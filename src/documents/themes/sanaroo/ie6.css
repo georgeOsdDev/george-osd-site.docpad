@@ -1,0 +1,17 @@
+#contact-form input { background: url(images/input-bg.png) repeat-x; width: 270px; height: 42px; border: 1px #ddd solid; margin: 0 0 15px 0; padding: 0 15px; color: #444; font-size: 14px; font-family: Arial, sans-serif; padding: 15px; height: auto; }
+#contact-form .submit { width: auto; padding: 10px; }
+#featured-section-img { float: left; border: 1px #ddd solid; }
+.hover ul { display: block; }
+.menu ul li { margin-top: -3px; margin-bottom: -22px; }
+.post-line { padding-top: 15px; }
+.latest-project { margin-left: 27px; }
+.first-latest-project { margin-left: 0; }
+.overview-block { margin-right: -3px; }
+#overview { margin-bottom: 40px; }
+#nav { margin-top: -30px; margin-bottom: 20px; }
+#nav li:hover ul { display: block; }
+#nav ul li { margin-top: -3px; margin-bottom: -25px; }
+#main { margin-top: 30px; }
+.portfolio-item { float: left; margin: 0 0 35px 27px; width: 282px; height: 192px; }
+.first { margin-left: 0; }
+.portfolio-item { margin-right: -3px; }

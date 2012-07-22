@@ -1,0 +1,416 @@
+/*
+This stylus is based on Sanaroo HTML Template
+http://www.csstemplatesfree.org/sanaroo.html
+And Customized little bit by Takeharu.Oshida
+*/
+
+/*
+Template Name: Sanaroo HTML Template
+Description: A Business/Portfolio HTML Template
+Author: Chris Creed
+URL: http://www.chris-creed.com
+*/
+
+@import "reset.css"
+
+// nib: http://visionmedia.github.com/nib/
+@import 'nib'
+
+// Responsive Layouts
+@import 'responsive.css'
+
+
+/* ------------- */
+/* -- Helpers -- */
+/* ------------- */
+.hide
+  display none
+.page-title
+  margin 0 0 20px 0
+
+/* -------------------- */
+/* -- General Styles -- */
+/* -------------------- */
+#wrap
+  width 960px
+  margin 0 auto
+
+body 
+  font normal 14px/1.618 arial, sans-serif
+  background url(/images/common/main-bg.jpg) repeat-x
+  color #444
+
+h1, h2, h3, h4, h5, h6
+  margin 20px 0 0 0
+
+h1
+  font-size 34px
+h2
+  font-size: 28px
+h3
+  font-size: 24px
+h4
+  font-size 20px
+h5
+  font-size 18px
+h6
+  font-size 16px
+p
+  margin 0 0 15px 0
+a
+  text-decoration none
+  color #0B79A3
+a:hover
+  color #222
+em
+  font-style italic
+ul
+  margin 0 0 15px 15px
+  list-style-type circle
+ol
+  margin 15px 0 15px 20px
+  list-style-type decimal
+strong, b
+  font-weight bold
+blockquote
+  margin 20px 40px
+  padding 10px
+  background-color #eee
+  border 1px #ddd 
+  solid
+.list-style-none
+  list-style none
+
+/* ------------- */
+/* -- Buttons -- */
+/* ------------- */
+.button
+  background #222
+  repeat-x
+  display inline-block
+  padding 5px 10px 6px
+  color #fff
+  text-decoration none
+  font-weight bold
+  line-height 1
+  border-radius 5px
+  -moz-border-radius 5px
+  -moz-box-shadow 0 1px 3px rgba(0,0,0,0.5)
+  -webkit-box-shadow 0 1px 3px rgba(0,0,0,0.5)
+  box-shadow 0 1px 3px rgba(0,0,0,0.5)
+  text-shadow 0 -1px 1px rgba(0,0,0,0.25)
+  border-bottom 1px solid rgba(0,0,0,0.25)
+  position relative
+  cursor pointer
+  font-family Arial, sans-serif
+  font-size 14px
+  padding 8px 14px 9px
+  background-color #0B79A3
+.button:hover
+  background-color #222
+  color #fff
+
+/* ----------- */
+/* -- Tools -- */
+/* ----------- */
+.line
+  clear both
+  border-bottom 1px #ccc dotted
+.post-line
+  clear both
+  border-bottom 1px #ccc dotted
+  margin-bottom 50px
+  padding-top 42px
+
+/* ------------ */
+/* -- Header -- */
+/* ------------ */
+#top-banner
+  height 5px
+  background-color #0B79A3
+#header
+  padding 50px 0 0 0
+#header img
+  float left
+#header h1
+  float left
+  font-size 70px
+  letter-spacing -3px
+  font-family "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif
+  font-weight bold
+  color #222
+  margin 0
+#header h1 a
+  color #444
+  text-shadow 0 1px 0 #222
+#header h2
+  float right
+  color #ccc
+  font-family "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif
+  letter-spacing -1px
+  margin 40px 0 0 0
+  font-size 34px
+
+/* ---------------- */
+/* -- Navigation -- */
+/* ---------------- */
+#nav
+  float left
+  border-top 1px #DDDDDD dotted
+  border-bottom 1px #DDDDDD dotted
+  width 960px
+  padding 19px 0 13px 0
+  position relative
+  list-style none
+  margin 20px 0 0 0
+  z-index 0
+#nav a
+  float left
+  display block
+  font normal 18px Arial, sans-serif
+  color #555555
+#nav li a:hover
+  color #0B79A3
+#nav li
+  float left
+  position relative
+#nav li span
+  float left
+  padding 0 20px
+  font-size 18px
+  color #555
+  margin-top -3px
+#nav-item-last span
+  display none
+#nav li:hover > ul
+  display block
+#nav ul
+  background #EEEEEE
+  display none
+  margin 0
+  padding 0
+  width 230px
+  position absolute
+  top 20px
+  left 0px
+  border solid 1px #ddd
+  list-style none
+#nav ul a:hover
+  background-color #0B79A3
+  color #ffffff
+#nav ul li
+  float none
+  margin 0
+  padding 0
+#nav ul a
+  padding 8px 10px
+  color #444444
+  font-size 16px
+  float none
+#nav ul span
+  display none
+#nav ul ul
+  left 230px
+  top -1px
+#nav li.current a
+  color #0B79A3
+#nav li.current li a
+  color #444444
+#nav li.current li a:hover
+  color #ffffff
+#nav ul li.current a:hover
+  color #ffffff
+
+/* ---------------------- */
+/* -- Featured Section -- */
+/* ---------------------- */
+#featured-section 
+  clear: both
+  padding 30px 0 70px 0
+  overflow: hidden
+  width: 100%
+#featured-section h3
+  font-family "RalewayThin", "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif
+  font-size 40px
+  letter-spacing: -1px
+  color: #444444
+  margin-bottom 5px
+#featured-section h4
+  font-family "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif
+  font-size: 30px
+  letter-spacing: -1px
+  color #555555
+  line-height: 40px
+  margin: 5px 0 0 0
+.memo
+  color red
+  font-size 8px
+  margin 0 -20px 0 -20px
+  vertical-align -20%
+#featured-section-details h4 a img
+  margin 0 5px 0 0
+  padding 15px 0 0 0
+#featured-section-details h5
+  font-family "RalewayThin"
+  margin -10px 0 0 0
+#featured-section-img
+  float left
+  margin 15px 0 0 5px
+  -webkit-box-shadow 0px 0 10px #aaa
+  -moz-box-shadow: 0px 0 10px #aaa
+  box-shadow: 0px 0 10px #aaa
+#featured-section-details
+  float right
+  width 500px
+#featured-section-details p
+  font normal 18px/1.618 Arial, sans-serif
+  margin 13px 0 23px 0
+  color #555
+
+
+/* -------------- */
+/* -- Overview -- */
+/* -------------- */
+#overview 
+  clear both
+  padding 30px 0 40px 0
+  overflow hidden
+.overview-block
+  float left
+  width 280px
+  margin-left 60px
+.overview-block p
+  font-size: 14px
+.first
+  margin-left 0
+
+/* ------------- */
+/* -- Content -- */
+/* ------------- */
+#main
+  float left
+  width 100%
+  margin 50px 0 60px 0
+#content
+  float left
+  width 500px
+
+/* --------------- */
+/* -- Portfolio -- */
+/* --------------- */
+.portfolio-item { float: left; margin: 0 0 75px 57px; width: 282px; height: 192px; }
+.portfolio-item p { font-size: 14px; margin: 0 0 5px 0; }
+.portfolio-item .post-image { width: 280px; height: 190px; -webkit-box-shadow: 0px 0 10px #aaa; -moz-box-shadow: 0px 0 10px #aaa; box-shadow: 0px 0 10px #aaa; }
+.first { margin-left: 0; }
+
+/* -- Single Project Page -- */
+#portfolio-single-content { float: left; width: 510px; }
+h2.project-title { margin: 0 0 30px 0; padding: 0; }
+.bold { color: #444	; font-weight: bold; }
+#sidebar-portfolio { float: right; width: 450px; }
+#sidebar-portfolio img { border: 1px #ddd solid; margin: 0 0 20px 0; }
+#portfolio-intro { width: 690px; margin: 0 0 40px 0; }
+#project-image-large { float: right; width: 430px; margin: 5px 0 50px 0; }
+#project-image-large img { border: 1px #ddd solid; }
+#project-content { float: left; width: 460px; }
+#project-content .title { margin: 10px 0 40px 0; }
+.portfolio-item h4 { color: #555; font-size: 14px; margin: 0 0 5px 0; padding: 0; }
+
+/* ------------------- */
+/* -- Posts / Pages -- */
+/* ------------------- */
+.blog-title
+  margin-bottom 40px
+.post .post-title
+  font-size 26px
+  line-height 32px
+  padding 0
+  margin: 0 0 -4px 0
+.post-meta, .post-meta a
+  font-size 20px
+  line-height 32px
+  color #888
+  padding 0 0 20px 10px
+  margin 0 0 0 0
+.post .more-link
+  display block
+  margin-top 10px
+.post .more-link:hover
+  color #222
+.post-image
+  float left
+  width 125px
+  height 125px
+  border 1px #ddd solid
+  margin 5px 20px 20px 0
+
+/* ------------- */
+/* -- Sidebar -- */
+/* ------------- */
+#sidebar
+  float right
+  width 280px
+  padding 20px 20px 5px 20px
+  margin 5px 0 0 0
+  background #f5f5f5
+  font-size 12px
+  border 1px #e5e5e5 solid
+#sidebar h3
+  font-size 20px
+  margin 0 0 5px 0
+  padding 0
+#sidebar p
+  font-size 12px
+  line-height 20px
+#sidebar ul, sidebar li
+  margin-left 16px
+.sidebar-contact-title
+  margin-bottom -2px
+  font-weight bold
+
+/* ------------- */
+/* -- Contact -- */
+/* ------------- */
+#contact-form { clear: both; margin: 24px 0 0 0; }
+#contact-form input[type=text] { background: url(images/input-bg.png) repeat-x; width: 270px; height: 42px; border: 1px #ddd solid; margin: 0 0 15px 0; padding: 0 15px; color: #444; font-size: 14px; font-family: Arial, sans-serif; }
+#contact-form textarea { background: url(images/textarea-bg.png) repeat-x; width: 470px; height: 190px; border: 1px #ddd solid; padding: 15px 15px; font-size: 14px; line-height: 24px; font-family: Arial, sans-serif; color: #444; }
+#contact-form input[type=submit] { margin: 15px 0 0 0; border: none; cursor: pointer; }
+#response { padding: 10px; border: 1px #ddd solid; background-color: #eee; color: #9e0616; }
+
+/* ------------ */
+/* -- Footer -- */
+/* ------------ */
+#footer
+  text-align center
+  padding 10px 0 30px 0
+  width: 100%
+  color: #888
+#footer p
+  font-size 12px
+
+
+// add
+.page-description
+  color #ccc
+  font-family "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif
+  letter-spacing 0px
+  font-size 18px
+  margin -30px 0 15px 0
+
+.post-tags
+  color #ccc
+  font-family "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif
+  font-size 14px
+
+.entry img
+  float left
+  margin 15px 20px 0 5px
+  -webkit-box-shadow 0px 0 10px #aaa
+  -moz-box-shadow: 0px 0 10px #aaa
+  box-shadow: 0px 0 10px #aaa
+  height 290px
+  width 290px
+
+
+
+
