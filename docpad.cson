@@ -62,7 +62,7 @@
 				reinvigorate: "" # instead of false, use your reinvigorate tracker id here
 
 				# Google Analytics is the most popular analytics service
-				google: ""  # instead of false, use your google analytics tracker id here
+				google: "UA-15502477-6"  # instead of false, use your google analytics tracker id here
 
 			# Specify some feed available for the visitors of our website
 			feeds: [

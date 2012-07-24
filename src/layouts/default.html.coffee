@@ -101,6 +101,7 @@ html lang: 'en', ->
 				h2 ->
 					text @site.subheading
 
+
 			# Nav bar
 			nav ->
 				ul id:'nav', ->
@@ -122,6 +123,7 @@ html lang: 'en', ->
 								li ->
 									a href:social.href, title:social.title,target:"_blank", ->
 											text social.text
+						span '/'
 
 			# Document
 			article id:'frontpage-content',
@@ -137,6 +139,10 @@ html lang: 'en', ->
 				a class:"addthis_button_preferred_2"
 				a class:"addthis_button_compact"
 				script type:"text/javascript",src:"http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f6378c46f6668f9"
+
+			# Search Box
+			div id:'cse', ->
+				text 'Loading'
 
 			# Footer
 			thisyear = new Date().getFullYear()
@@ -173,3 +179,16 @@ html lang: 'en', ->
 				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 			})();
 			""" if analytics.google
+
+		script src:"http://www.google.co.jp/jsapi", type:"text/javascript"
+		script """
+			google.load('search', '1', {language : 'en'});
+			google.setOnLoadCallback(function() {
+				var customSearchOptions = {};
+				var customSearchControl = new google.search.CustomSearchControl(
+					'008379058641507077145:vv496rydu2y', customSearchOptions);
+				customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+				var options = new google.search.DrawOptions();
+				options.setSearchFormRoot('cse-search-form');
+				customSearchControl.draw('cse', options);			}, true);
+		"""
