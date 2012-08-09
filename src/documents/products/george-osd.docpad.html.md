@@ -30,7 +30,7 @@ More detail> read this [entry](/blog/2012-07-21-Docpad-How-To)
   * coffeekup
   * Markdown
 * Host
-  * Nodejitsu
+  * cloudfoundry.com
 
 ### Repositry
  * [georgeOsdDev/george-osd-site.docpad](https://github.com/georgeOsdDev/george-osd-site.docpad)

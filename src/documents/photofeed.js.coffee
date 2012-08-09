@@ -1,7 +1,12 @@
 # read feed url and display images
 window.document.body.onload = ->
   feedurl = $("#feedurl").text()
-  reedfeed = (url) ->
-    #console.log url
+  readfeed = (url) ->
+    feed = new google.feeds.Feed url
+    feed.load = (result) ->
+      console.log result
+      return
+    return
 
-  setTimeout (reedfeed feedurl, 1000)
+  # google.load "feeds", "1"
+  # google.setOnLoadCallback readfeed(feedurl)
