@@ -1,9 +1,9 @@
 ---
 title: "george-osd-site.docpad"
-date: "2012"
+date: "2012/07/24"
 layout: "product"
 tags: ['product','coffee-script','webService']
-pageOrder: 0
+pageOrder: 3
 repositryUrl:'https://github.com/georgeOsdDev/george-osd-site.docpad'
 repositryName:'georgeOsdDev/george-osd-site.docpad'
 serviceUrl:'http://george-osd-site.cloudfoundry.com/'

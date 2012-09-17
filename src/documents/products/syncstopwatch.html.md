@@ -1,9 +1,9 @@
 ---
 title: "SyncStopWatch"
-date: "2012"
+date: "2012/02/22"
 layout: "product"
 tags: ['product','Node.js','webService']
-pageOrder: 3
+pageOrder: 6
 repositryUrl:'https://github.com/georgeOsdDev/syncStopWatch'
 repositryName:'georgeOsdDev/syncStopWatch'
 serviceUrl:'http://george-osd.cloudfoundry.com/'

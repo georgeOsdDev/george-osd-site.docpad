@@ -1,9 +1,9 @@
 ---
 title: "Slidepad"
-date: "2012"
+date: "2012/08/09"
 layout: "product"
 tags: ['product','coffee-script','webService','presentation']
-pageOrder: 0
+pageOrder: 2
 repositryUrl:'https://github.com/georgeOsdDev/slidepad'
 repositryName:'georgeOsdDev/slidepad'
 serviceUrl:'http://slidepad.herokuapp.com/'
@@ -16,6 +16,9 @@ author:'takeharu.oshida'
 Slidepad converts markdown documents into cool HTML presentations.
 You can chose presentation template from 
 [Big](https://github.com/tmcw/big/)、[deck.js](http://imakewebthings.com/deck.js/)、[html5slides](http://code.google.com/p/html5slides/)、[impress.js](https://github.com/bartaz/impress.js/).
+
+And selected as 6th skeleton of Docpad@6.5.5!
+I'm very Happy!
 
 ### Technique
 * Node.js
