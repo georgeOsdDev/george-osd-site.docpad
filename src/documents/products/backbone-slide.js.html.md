@@ -3,7 +3,7 @@ title: "backbone-slide.js"
 date: "2012/09/18"
 layout: "product"
 tags: ['product','javascript','backbone.js','HTML5']
-pageOrder: 1
+pageOrder: 6
 repositryUrl:'https://github.com/georgeOsdDev/backbone-slide.js'
 repositryName:'georgeOsdDev/backbone-slide.js'
 serviceUrl:'http://georgeosddev.github.com/backbone-slide.js/'

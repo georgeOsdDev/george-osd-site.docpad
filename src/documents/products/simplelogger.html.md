@@ -3,7 +3,7 @@ title: "SimpleLogger"
 date: "2012/05/03"
 layout: "product"
 tags: ['product','coffee-script']
-pageOrder: 4
+pageOrder: 3
 repositryUrl:'https://github.com/georgeOsdDev/SimpleLogger'
 repositryName:'georgeOsdDev/SimpleLogger'
 description:"Simple Logger for coffee-script.¥n Just a snippet to learn Module Concept of Javascript."

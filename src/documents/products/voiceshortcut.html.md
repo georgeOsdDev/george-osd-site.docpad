@@ -3,7 +3,7 @@ title: "VoiceShortcut"
 date: "2012/03/18"
 layout: "product"
 tags: ['product','HTML5','webService']
-pageOrder: 5
+pageOrder: 2
 repositryUrl:'https://github.com/georgeOsdDev/voiceShortcut'
 repositryName:'georgeOsdDev/voiceShortcut'
 serviceUrl:'http://voiceshortcut.cloudfoundry.com/'

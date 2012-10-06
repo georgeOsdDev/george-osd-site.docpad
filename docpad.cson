@@ -105,6 +105,10 @@
 					text:		'Booklog'
 					title:	'Booklog'
 					href:		'http://booklog.jp/users/georgeosd'
+				,
+					text:		'coderwall'
+					title:	'coderwall'
+					href:		'http://coderwall.com/georgeosddev'
 			]
 
 		# -----------------------------

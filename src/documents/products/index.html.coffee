@@ -13,5 +13,5 @@ section id:"main", ->
 			'Services and Snippets I created.'
 		# Post Listing
 		text @partial 'list-products.html.coffee', {
-			documents: @getCollection('products').toJSON()
+			documents: @getCollection('products').toJSON().reverse()
 		}

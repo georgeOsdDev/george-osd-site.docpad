@@ -1,0 +1,70 @@
+---
+title: "coderwall badges"
+date: "2012-10-06"
+layout: "post"
+tags: ['post','blog']
+description: 'coderwall badges is pretty cool.'
+image: '/entry/coderwall-badges.png'
+author:'takeharu.oshida'
+---
+<style type="text/css">
+  #coderwallbadges {
+    margin-bottom:50px;
+  }
+  #coderwallbadges img{
+    width:40px;
+    height:40px;
+    box-shadow:none;
+    margin:5px;
+  }
+</style>
+<p>
+  I want to collect more！
+</p>
+<div id="coderwallbadges" data-source="georgeosddev"></div>
+<br>  
+<div id="gist">
+  <script src="https://gist.github.com/3843721.js?file=main.js"></script>
+</div>
+<script type="text/javascript">
+window.onload =function(){
+Badge = Backbone.Model.extend({});
+Badges = Backbone.Collection.extend({
+  model: Badge,
+  url: function(username) {
+    return 'http://coderwall.com/:USERNAME.json?callback=?'.replace(':USERNAME', username);
+  },
+  fetch: function(username) {
+    var self = this;
+    $.getJSON(self.url(username),function(data){
+      self.reset(data['data']['badges']);
+    });
+  }
+});
+BadgeView = Backbone.View.extend({
+  el: '#coderwallbadges',
+  initialize: function() {
+    var self = this;
+    _.bindAll(this, 'render');
+    self.collection = new Badges();
+    this.collection.on("reset", this.render);
+    self.collection.fetch(self.$el.attr('data-source'));
+  },
+  render: function() {
+    var self = this;
+    this.collection.each(function(badge){
+      var badgeImg = new Image();
+      badgeImg.src = badge.get('badge');
+      self.$el.append(badgeImg);
+    });
+  }
+});
+new BadgeView();
+var elm = document.createElement('script');
+elm.src = 'https://gist.github.com/3843721.js?file=main.js';
+$("#gist").append(elm);
+}
+</script>
+<div id="gist">
+<!-- <script src="https://gist.github.com/3843721.js?file=main.js"></script> -->
+</div>

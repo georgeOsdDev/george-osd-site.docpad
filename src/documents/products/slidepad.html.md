@@ -3,7 +3,7 @@ title: "Slidepad"
 date: "2012/08/09"
 layout: "product"
 tags: ['product','coffee-script','webService','presentation']
-pageOrder: 2
+pageOrder: 5
 repositryUrl:'https://github.com/georgeOsdDev/slidepad'
 repositryName:'georgeOsdDev/slidepad'
 serviceUrl:'http://slidepad.herokuapp.com/'
