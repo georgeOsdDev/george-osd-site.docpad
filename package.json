@@ -46,7 +46,9 @@
     "docpad-plugin-markdown": "2.x",
     "docpad-plugin-partials": "2.x",
     "docpad-plugin-stylus": "2.0.2",
-    "docpad-plugin-text": "2.x"
+    "docpad-plugin-text": "2.x",
+    "docpad-plugin-gist": "~1.0.0",
+    "docpad-plugin-uglify": "~1.0.0"
   },
   "engines": {
     "node": ">=0.4.0",
