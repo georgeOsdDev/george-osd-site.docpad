@@ -22,7 +22,7 @@ html lang: 'en', ->
 		# Meta Information
 
 		# Set our charset to UFT8 (oldshool method)
-		meta charset:'utf-16'
+		meta charset:'utf-8'
 
 		# Set our charset to UFT8 (newschool method)
 		meta 'http-equiv':'content-type', content:'text/html; charset=utf-8'
@@ -31,7 +31,7 @@ html lang: 'en', ->
 		meta 'http-equiv':'X-UA-Compatible', content:'IE=edge,chrome=1'
 
 		# Set our defualt viewport (window size and scaling) for mobile devices
-		meta name:'viewport', content:'width=device-width, initial-scale=1'
+		meta name:'viewport', content:'width=device-width, initial-scale=0.8'
 
 		# SEO: Set our page title that will show up in search engine results
 		meta name:'title', content:h(siteTitle)
@@ -148,9 +148,9 @@ html lang: 'en', ->
 			thisyear = new Date().getFullYear()
 			yearstr = if thisyear is 2012 then "2012" else "2012-" + thisyear
 			copyright = @site.copyright
-			
+
 			footer id:'footer','.footing', ->
-				p id:'copyright', -> 
+				p id:'copyright', ->
 					"""
 					#{@site.footnote} <br>
 					#{(copyright.replace 'REPLACEYEARS' , yearstr)}
