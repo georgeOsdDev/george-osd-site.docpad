@@ -80,7 +80,7 @@ use localhost:3000 for all protocol.
 
 ### Licence
 
-Source code can be found on [github](https://github.com/georgeOsdDev/markdown-edit), licenced under [MIT](http://opensource.org/licenses/mit-license.php).
+Source code can be found on [github](https://github.com/georgeOsdDev/ws-tether), licenced under [MIT](http://opensource.org/licenses/mit-license.php).
 
 Developed by [Takeharu.Oshida](http://about.me/takeharu.oshida)
 
@@ -92,4 +92,4 @@ Developed by [Takeharu.Oshida](http://about.me/takeharu.oshida)
   * websocket.io
 
 ### Repositry
- * [georgeOsdDev/SlideBase](https://github.com/georgeOsdDev/ws-tether)
+ * [georgeOsdDev/ws-tether](https://github.com/georgeOsdDev/ws-tether)
